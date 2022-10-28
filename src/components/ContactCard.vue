@@ -7,27 +7,31 @@
 </script>
 
 <template>
-    <div>
+    <div class="profile-img-card">
         <div class="p-1">
-            <strong>Tên:</strong>
+            <strong class="strong-contact">Tên:</strong>
                 {{ contact.name }}
         </div>
         <div class="p-1">
-            <strong>E-mail:</strong>
+            <strong class="strong-contact">E-mail:</strong>
                 {{ contact.email }}
         </div>
         <div class="p-1">
-            <strong>Địa chỉ:</strong>
+            <strong class="strong-contact">Địa chỉ:</strong>
                 {{ contact.address }}
         </div>
         <div class="p-1">
-            <strong>Điện thoại:</strong>
+            <strong class="strong-contact">Điện thoại:</strong>
                 {{ contact.phone }}
         </div>
         <div class="p-1">
-            <strong>Liên hệ yêu thích:&nbsp;</strong>
+            <strong class="strong-contact">Liên hệ yêu thích:&nbsp;</strong>
             <i v-if="contact.favorite" class="fas fa-check"></i>
             <i v-else class="fas fa-times"></i>
         </div>
     </div>
 </template>
+
+<style scoped>
+@import "@/assets/form.css";
+</style>
